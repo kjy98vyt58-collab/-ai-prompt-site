@@ -1,4 +1,5 @@
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aipromptku.cn";
+const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://aipromptku.cn";
+const siteUrl = rawSiteUrl.replace(/\/+$/, "");
 
 export const siteConfig = {
   name: "AI提示词库",
